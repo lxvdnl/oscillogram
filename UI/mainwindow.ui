@@ -18,10 +18,36 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="2" column="0" alignment="Qt::AlignRight">
-     <widget class="QLabel" name="label_2">
+    <item row="3" column="1">
+     <widget class="QSlider" name="pValSlider">
+      <property name="cursor">
+       <cursorShape>ClosedHandCursor</cursorShape>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>39</number>
+      </property>
+      <property name="sliderPosition">
+       <number>20</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3" alignment="Qt::AlignRight">
+     <widget class="QLineEdit" name="rValLine">
+      <property name="styleSheet">
+       <string notr="true">background-color: white;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" alignment="Qt::AlignRight">
+     <widget class="QLabel" name="label">
       <property name="text">
-       <string>N (1, 2,  3)</string>
+       <string>P (0, 2)</string>
       </property>
      </widget>
     </item>
@@ -32,10 +58,42 @@
       </property>
      </widget>
     </item>
-    <item row="5" column="3" alignment="Qt::AlignRight">
-     <widget class="QLineEdit" name="rValLine">
+    <item row="3" column="3" alignment="Qt::AlignRight">
+     <widget class="QLineEdit" name="pValLine">
       <property name="styleSheet">
        <string notr="true">background-color: white;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3" alignment="Qt::AlignRight">
+     <widget class="QLineEdit" name="nValLine">
+      <property name="styleSheet">
+       <string notr="true">background-color: white;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QSlider" name="nValSlider">
+      <property name="cursor">
+       <cursorShape>ClosedHandCursor</cursorShape>
+      </property>
+      <property name="toolTipDuration">
+       <number>-4</number>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>3</number>
+      </property>
+      <property name="pageStep">
+       <number>3</number>
+      </property>
+      <property name="sliderPosition">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
       </property>
      </widget>
     </item>
@@ -68,68 +126,24 @@
       </property>
      </widget>
     </item>
-    <item row="3" column="0" alignment="Qt::AlignRight">
-     <widget class="QLabel" name="label">
+    <item row="2" column="0" alignment="Qt::AlignRight">
+     <widget class="QLabel" name="label_2">
       <property name="text">
-       <string>P (0, 2)</string>
+       <string>N (1, 2,  3)</string>
       </property>
      </widget>
     </item>
-    <item row="3" column="3" alignment="Qt::AlignRight">
-     <widget class="QLineEdit" name="pValLine">
-      <property name="styleSheet">
-       <string notr="true">background-color: white;</string>
+    <item row="6" column="3">
+     <widget class="QPushButton" name="bifurcationButton">
+      <property name="text">
+       <string>bifurcation</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="3" alignment="Qt::AlignRight">
-     <widget class="QLineEdit" name="nValLine">
-      <property name="styleSheet">
-       <string notr="true">background-color: white;</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QSlider" name="pValSlider">
-      <property name="cursor">
-       <cursorShape>ClosedHandCursor</cursorShape>
-      </property>
-      <property name="minimum">
-       <number>1</number>
-      </property>
-      <property name="maximum">
-       <number>39</number>
-      </property>
-      <property name="sliderPosition">
-       <number>20</number>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="QSlider" name="nValSlider">
-      <property name="cursor">
-       <cursorShape>ClosedHandCursor</cursorShape>
-      </property>
-      <property name="toolTipDuration">
-       <number>-4</number>
-      </property>
-      <property name="minimum">
-       <number>1</number>
-      </property>
-      <property name="maximum">
-       <number>3</number>
-      </property>
-      <property name="pageStep">
-       <number>3</number>
-      </property>
-      <property name="sliderPosition">
-       <number>2</number>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+    <item row="6" column="0" colspan="2">
+     <widget class="QProgressBar" name="progressBar">
+      <property name="value">
+       <number>0</number>
       </property>
      </widget>
     </item>

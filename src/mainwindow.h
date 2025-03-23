@@ -34,12 +34,15 @@ class MainWindow : public QMainWindow {
 
     void on_rValLine_editingFinished();
 
+    void on_bifurcationButton_clicked();
+
    private:
     Ui::MainWindow *ui;
 
     void buildSurface();
     void initializeData();
     void draw();
+    void plotBifurcationDiagram();
 
     std::vector<std::pair<double, double>> points, surface;
 };
